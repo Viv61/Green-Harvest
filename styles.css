@@ -146,19 +146,114 @@ body {
     padding: 5rem 5%;
 }
 
-.about h2 {
+.section-heading {
     text-align: center;
     margin-bottom: 3rem;
     color: #2c5530;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #4CAF50;
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .about-text {
-    text-align: center;
+    text-align: left;
+}
+
+/* About Section Headings */
+.about-heading {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid;
+    transition: color 0.3s ease;
+}
+
+.intro-heading {
+    color: #2E8B57;  /* Sea Green */
+    border-left-color: #2E8B57;
+}
+
+.expertise-heading {
+    color: #8B4513;  /* Saddle Brown */
+    border-left-color: #8B4513;
+}
+
+.methods-heading {
+    color: #4169E1;  /* Royal Blue */
+    border-left-color: #4169E1;
+}
+
+.produce-heading {
+    color: #FF8C00;  /* Dark Orange */
+    border-left-color: #FF8C00;
+}
+
+.commitment-heading {
+    color: #800080;  /* Purple */
+    border-left-color: #800080;
+}
+
+.freshness-heading {
+    color: #228B22;  /* Forest Green */
+    border-left-color: #228B22;
+}
+
+.invitation-heading {
+    color: #B8860B;  /* Dark Goldenrod */
+    border-left-color: #B8860B;
+}
+
+.about-heading:hover {
+    opacity: 0.8;
+}
+
+.about-list {
+    list-style-position: inside;
+    margin: 1rem 0 2rem;
+    padding-left: 1rem;
+}
+
+.about-list li {
+    margin-bottom: 0.8rem;
+    color: #444;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.about-list li::before {
+    content: '•';
+    color: inherit;
+    position: absolute;
+    left: 0;
+}
+
+.about-list li strong {
+    color: inherit;
+    font-weight: 600;
+}
+
+.justified {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.1rem;
 }
 
 .stats {
@@ -166,6 +261,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .stat-item {
